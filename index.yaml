@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  runo:
+  - apiVersion: v2
+    appVersion: 0.1.1
+    created: "2023-07-04T16:34:20.818521955Z"
+    description: A Helm chart for runo
+    digest: 98fe97b3feb6e0085879f4148e439384fe50c1e2bc88eff075aba09377f14ac3
+    name: runo
+    type: application
+    urls:
+    - https://github.com/AljoschaP/runo-helm-chart/releases/download/runo-0.1.1/runo-0.1.1.tgz
+    version: 0.1.1
+generated: "2023-07-04T16:34:20.818527755Z"
