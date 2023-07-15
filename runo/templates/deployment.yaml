@@ -31,9 +31,18 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            - runo
+          {{- with .Values.args }}
+          args:
+            - --http-port={{ .httpPort }}
+            {{- if .dryRun }}
+            - --dry-run
+            {{- end }}
+          {{- end }}
           ports:
             - name: http
-              containerPort: 80
+              containerPort: {{ .Values.args.httpPort }}
               protocol: TCP
           livenessProbe:
             httpGet:

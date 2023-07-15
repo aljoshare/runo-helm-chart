@@ -53,3 +53,8 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+# Args for runo
+args:
+  dryRun: false
+  httpPort: 8080
