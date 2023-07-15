@@ -9,7 +9,7 @@ roleRef:
 subjects:
   - namespace: {{ .Release.Namespace }}
     kind: ServiceAccount
-    name: {{ include "runo.serviceAccountName" . }}
+    name: {{ include "runo.serviceAccountName" . }}-controller
 ---
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
@@ -22,4 +22,4 @@ roleRef:
 subjects:
   - namespace: {{ .Release.Namespace }}
     kind: ServiceAccount
-    name: {{ include "runo.serviceAccountName" . }}
+    name: {{ include "runo.serviceAccountName" . }}-cronjob
