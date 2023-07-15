@@ -11,27 +11,25 @@ The following table lists the configurable parameters of the Runo chart and thei
 
 | Parameter                | Description             | Default        |
 | ------------------------ | ----------------------- | -------------- |
-| `replicaCount` |  | `1` |
-| `image.repository` |  | `"ghcr.io/aljoschap/runo"` |
-| `image.pullPolicy` |  | `"IfNotPresent"` |
-| `image.tag` |  | `""` |
-| `imagePullSecrets` |  | `[]` |
-| `nameOverride` |  | `""` |
-| `fullnameOverride` |  | `""` |
-| `serviceAccount.create` |  | `true` |
-| `serviceAccount.annotations` |  | `{}` |
-| `serviceAccount.name` |  | `""` |
-| `podAnnotations` |  | `{}` |
-| `podSecurityContext` |  | `{}` |
-| `securityContext` |  | `{}` |
-| `resources` |  | `{}` |
-| `autoscaling.enabled` |  | `false` |
-| `autoscaling.minReplicas` |  | `1` |
-| `autoscaling.maxReplicas` |  | `100` |
-| `autoscaling.targetCPUUtilizationPercentage` |  | `80` |
-| `nodeSelector` |  | `{}` |
-| `tolerations` |  | `[]` |
-| `affinity` |  | `{}` |
+| `replicaCount` | Set the number of replicas | `1` |
+| `image.repository` | Set the image repositorsy | `"ghcr.io/aljoschap/runo"` |
+| `image.pullPolicy` | Set the pull policy | `"IfNotPresent"` |
+| `image.tag` | Set the image tag | `""` |
+| `imagePullSecrets` | Set a image pull secret | `[]` |
+| `nameOverride` | Override the name | `""` |
+| `fullnameOverride` | Override the full name | `""` |
+| `serviceAccount.create` | Specifies whether a service account should be created | `true` |
+| `serviceAccount.annotations` | Annotations to add to the service account | `{}` |
+| `serviceAccount.name` | The name of the service account to use. | `""` |
+| `podAnnotations` | Set additional annotations for the pod | `{}` |
+| `podSecurityContext` | Set the security context for the pod | `{}` |
+| `securityContext` | Set the security context for the container | `{}` |
+| `resources` | Set the resources | `{}` |
+| `nodeSelector` | Set node selectors | `{}` |
+| `tolerations` | Set node tolerations | `[]` |
+| `affinity` | Set pod (anti-)affinities | `{}` |
+| `args.dryRun` | Specify whether runo should run in dry-run mode | `false` |
+| `args.httpPort` | Set the port for the http endpoint (e.g. health, metrics, etc.) | `8080` |
 
 
 
