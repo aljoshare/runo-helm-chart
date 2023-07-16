@@ -2,3 +2,5 @@
 sign: false
 # UID of the GPG key to use
 key: None
+# Generate release notes
+generate-release-notes: true
