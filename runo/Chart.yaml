@@ -1,6 +1,6 @@
 apiVersion: v2
 name: runo
-description: A Helm chart for runo
+description: A Helm Chart for the Kubernetes Secrets Generator called rūnō
 type: application
 version: 0.1.2
 appVersion: "0.1.3"
