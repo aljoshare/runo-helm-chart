@@ -12,7 +12,7 @@ For a description of the project, please take a look at the [controller reposito
 ## Install
 
 ```bash
-helm repo add runo https://aljoschap.github.io/runo-helm-chart/
+helm repo add runo https://runo.rocks/
 helm search repo runo
 helm install my-release runo/runo
 ```
