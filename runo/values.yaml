@@ -5,7 +5,7 @@
 replicaCount: 1 # Set the number of replicas
 
 image:
-  repository: ghcr.io/aljoschap/runo # Set the image repositorsy
+  repository: ghcr.io/aljoshare/runo # Set the image repository
   pullPolicy: IfNotPresent # Set the pull policy
   # Overrides the image tag whose default is the chart appVersion.
   tag: "" # Set the image tag
