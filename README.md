@@ -2,7 +2,7 @@
 
 A Helm Chart for the Kubernetes Secrets Generator called rūnō
 
-For a description of the project, please take a look at the [controller repository](https://github.com/AljoschaP/runo).
+For a description of the project, please take a look at the [controller repository](https://github.com/aljoshare/runo).
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ For a description of the project, please take a look at the [controller reposito
 ## Install
 
 ```bash
-helm repo add runo https://runo.rocks/
+helm repo add runo https://runo.rocks
 helm search repo runo
 helm install my-release runo/runo
 ```
@@ -30,7 +30,7 @@ __IMPORTANT:__ Because this project follows the [conventional commit specificati
 | Parameter                | Description             | Default        |
 | ------------------------ | ----------------------- | -------------- |
 | `replicaCount` | Set the number of replicas | `1` |
-| `image.repository` | Set the image repositorsy | `"ghcr.io/aljoschap/runo"` |
+| `image.repository` | Set the image repositorsy | `"ghcr.io/aljoshare/runo"` |
 | `image.pullPolicy` | Set the pull policy | `"IfNotPresent"` |
 | `image.tag` | Set the image tag | `""` |
 | `imagePullSecrets` | Set a image pull secret | `[]` |
