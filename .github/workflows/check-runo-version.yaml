@@ -1,0 +1,14 @@
+name: check if runo release is available
+
+on: pull_request
+
+jobs:
+  check-runo-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Check if Release of Runo exists
+        run: curl --output /dev/null --silent --fail https://github.com/aljoshare/runo/releases/tag/$(cat runo/Chart.yaml | grep "version:" | cut -d':' -f2 | xargs)
