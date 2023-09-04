@@ -11,4 +11,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check if Release of Runo exists
-        run: curl --output /dev/null --silent --fail https://github.com/aljoshare/runo/releases/tag/$(cat runo/Chart.yaml | grep "version:" | cut -d':' -f2 | xargs)
+        run: curl --output /dev/null --silent --fail https://github.com/aljoshare/runo/releases/tag/v$(cat runo/Chart.yaml | grep "appVersion:" | cut -d':' -f2 | xargs)
