@@ -3,4 +3,4 @@ name: runo
 description: A Helm Chart for the Kubernetes Secrets Generator called rūnō
 type: application
 version: 0.1.7
-appVersion: "0.2.1"
+appVersion: "0.2.2"
