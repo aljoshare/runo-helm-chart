@@ -36,6 +36,7 @@ spec:
           {{- with .Values.args }}
           args:
             - --http-port={{ .httpPort }}
+            - --requeue-duration={{ .requeueDuration }}
             {{- if .dryRun }}
             - --dry-run
             {{- end }}
