@@ -54,3 +54,4 @@ affinity: {} # Set pod (anti-)affinities
 args:
   dryRun: false # Specify whether runo should run in dry-run mode
   httpPort: 8080 # Set the port for the http endpoint (e.g. health, metrics, etc.)
+  requeueDuration: 300 # Set the requeue duration of runo (How long it should wait between reconciliation loops)

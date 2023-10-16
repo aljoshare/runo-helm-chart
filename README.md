@@ -30,7 +30,7 @@ __IMPORTANT:__ Because this project follows the [conventional commit specificati
 | Parameter                | Description             | Default        |
 | ------------------------ | ----------------------- | -------------- |
 | `replicaCount` | Set the number of replicas | `1` |
-| `image.repository` | Set the image repositorsy | `"ghcr.io/aljoshare/runo"` |
+| `image.repository` | Set the image repository | `"ghcr.io/aljoshare/runo"` |
 | `image.pullPolicy` | Set the pull policy | `"IfNotPresent"` |
 | `image.tag` | Set the image tag | `""` |
 | `imagePullSecrets` | Set a image pull secret | `[]` |
@@ -48,6 +48,7 @@ __IMPORTANT:__ Because this project follows the [conventional commit specificati
 | `affinity` | Set pod (anti-)affinities | `{}` |
 | `args.dryRun` | Specify whether runo should run in dry-run mode | `false` |
 | `args.httpPort` | Set the port for the http endpoint (e.g. health, metrics, etc.) | `8080` |
+| `args.requeueDuration` | Set the requeue duration of runo (How long it should wait between reconciliation loops) | `300` |
 
 
 ---
