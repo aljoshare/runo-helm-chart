@@ -1,8 +1,22 @@
 # Changelog
 
-## [Unreleased](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.7...HEAD) (2023-10-16)
+## [Unreleased](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.9...HEAD) (2024-01-07)
 
 ### Features
+
+* bump runo to 0.2.4
+([0e547ce](https://github.com/aljoshare/runo-helm-chart/commit/0e547ce7d129915de8e0d84a28c4df6d0c7862ee))
+
+### [runo-0.1.9](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.8...runo-0.1.9) (2023-11-30)
+
+#### Features
+
+* bump runo to 0.2.3
+([96bf664](https://github.com/aljoshare/runo-helm-chart/commit/96bf66440a2d7bb5e1d3fbc04b58028f1b6376a0))
+
+### [runo-0.1.8](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.7...runo-0.1.8) (2023-10-16)
+
+#### Features
 
 * add support for setting the requeue duration of runo
 ([536fa5d](https://github.com/aljoshare/runo-helm-chart/commit/536fa5d48e1182f7bcc465329f7b47a6d4684626))
