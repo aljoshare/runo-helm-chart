@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   runo:
   - apiVersion: v2
+    appVersion: 0.2.12
+    created: "2024-10-25T16:03:43.029966334Z"
+    description: A Helm Chart for the Kubernetes Secrets Generator called rūnō
+    digest: 9bc6a4a6f845c6572c1f8ab3669994c658682a0507ec755990932eac5d76ca58
+    name: runo
+    type: application
+    urls:
+    - https://github.com/aljoshare/runo-helm-chart/releases/download/runo-0.1.17/runo-0.1.17.tgz
+    version: 0.1.17
+  - apiVersion: v2
     appVersion: 0.2.11
     created: "2024-08-11T14:34:17.518872878Z"
     description: A Helm Chart for the Kubernetes Secrets Generator called rūnō
@@ -161,4 +171,4 @@ entries:
     urls:
     - https://github.com/AljoschaP/runo-helm-chart/releases/download/runo-0.1.1/runo-0.1.1.tgz
     version: 0.1.1
-generated: "2024-08-11T14:34:17.518998873Z"
+generated: "2024-10-25T16:03:43.030148343Z"
