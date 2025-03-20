@@ -1,8 +1,15 @@
 # Changelog
 
-## [Unreleased](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.20...HEAD) (2025-03-02)
+## [Unreleased](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.21...HEAD) (2025-03-20)
 
-### Features
+### Fixes
+
+* use recreate as rollout strategy
+([68911e8](https://github.com/aljoshare/runo-helm-chart/commit/68911e836327c9464a936ad774d90407366e4c75))
+
+### [runo-0.1.21](https://github.com/aljoshare/runo-helm-chart/compare/runo-0.1.20...runo-0.1.21) (2025-03-02)
+
+#### Features
 
 * bump runo to 0.2.16
 ([633bc98](https://github.com/aljoshare/runo-helm-chart/commit/633bc98a1f0cd3c999f612a6c1896b09a4547863))
