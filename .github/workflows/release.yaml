@@ -14,19 +14,16 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Create symlink # Can be removed as soon as this is fixed: https://github.com/googleapis/release-please-action/issues/741
-        run: |
-          ln -s runo/Chart.yaml
-          ln -s runo/CHANGELOG.md
       - uses: googleapis/release-please-action@v4
         id: release
         with:
           path: runo
           release-type: helm
+      - name: Checkout
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - name: Configure Git
         if: ${{ steps.release.outputs.release_created }}
         run: |
