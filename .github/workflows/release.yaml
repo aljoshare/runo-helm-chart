@@ -5,23 +5,34 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   release:
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          release-type: helm
       - name: Checkout
+        if: ${{ steps.release.outputs.release_created }}
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
       - name: Configure Git
+        if: ${{ steps.release.outputs.release_created }}
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - name: Install Helm
+        if: ${{ steps.release.outputs.release_created }}
         uses: azure/setup-helm@v4
       - name: Run chart-releaser
+        if: ${{ steps.release.outputs.release_created }}
         uses: helm/chart-releaser-action@v1.7.0
         with:
           charts_dir: .
