@@ -1,0 +1,23 @@
+name: Check Commits
+on: pull_request
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - uses: commit-check/commit-check-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          message: true
+          branch: true
+          author-name: true
+          author-email: true
+          commit-signoff: true
+          merge-base: true
+          imperative: false
+          job-summary: true
