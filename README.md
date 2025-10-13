@@ -11,10 +11,16 @@ For a description of the project, please take a look at the [controller reposito
 
 ## Install
 
+Before 0.2.0:
 ```bash
 helm repo add runo https://helm.runo.rocks
 helm search repo runo
 helm install my-release runo/runo
+```
+
+Beginning with 0.2.0:
+```bash
+helm install my-release oci://ghcr.io/aljoshare/runo-helm-chart/runo --version VERSION # e.g. 0.2.0
 ```
 
 ## Contribute
