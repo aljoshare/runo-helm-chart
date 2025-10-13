@@ -1,0 +1,32 @@
+name: post-release
+
+on:
+  push:
+    tags:
+      - runo-*.*.*
+
+permissions:
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - env:
+          REF_NAME: ${{ github.ref_name }}
+        run: |
+          echo "CHART_TAG=${REF_NAME/runo-/}" >> "$GITHUB_ENV"
+      - name: Push Release to OCI registry
+        uses: appany/helm-oci-chart-releaser@v0.5.0
+        with:
+          name: runo-helm
+          repository: aljoshare
+          tag: ${{ env.CHART_TAG }}
+          path: runo
+          registry: ghcr.io
+          registry_username: ${{ github.actor }}
+          registry_password: ${{ secrets.GITHUB_TOKEN }}
