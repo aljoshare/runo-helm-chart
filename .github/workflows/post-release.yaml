@@ -26,5 +26,5 @@ jobs:
       - env:
           REF_NAME: ${{ github.ref_name }}
         run: |
-          helm packages runo --version ${REF_NAME/runo-v/}
+          helm package runo --version ${REF_NAME/runo-v/}
           helm push runo-${REF_NAME/runo-v/}.tgz oci://ghcr.io/aljoshare/runo-helm-chart
