@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-      - uses: azure/setup-helm@v4.3.0
+      - uses: azure/setup-helm@v5
       - env:
           REF_NAME: ${{ github.ref_name }}
         run: |
