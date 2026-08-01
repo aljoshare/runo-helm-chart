@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.7.0](https://github.com/aljoshare/runo-helm-chart/compare/runo-v0.6.0...runo-v0.7.0) (2026-08-01)
+
+
+### Features
+
+* bump runo to 0.4.0 ([#85](https://github.com/aljoshare/runo-helm-chart/issues/85)) ([84501af](https://github.com/aljoshare/runo-helm-chart/commit/84501af6876bf91fd0971dfd765077e0ce21b673))
+* bump runo to 0.5.0 ([#87](https://github.com/aljoshare/runo-helm-chart/issues/87)) ([b956ec6](https://github.com/aljoshare/runo-helm-chart/commit/b956ec6ceb7b557a9e858e64c2408802ffaa8cd0))
+
 ## [0.6.0](https://github.com/aljoshare/runo-helm-chart/compare/runo-v0.5.0...runo-v0.6.0) (2026-04-03)
 
 
