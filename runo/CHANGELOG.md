@@ -1,5 +1,63 @@
 # Changelog
 
+## [0.9.0](https://github.com/aljoshare/runo-helm-chart/compare/runo-v0.8.1...runo-v0.9.0) (2026-10-20)
+
+
+### Features
+
+* add first version of helm chart ([c227f60](https://github.com/aljoshare/runo-helm-chart/commit/c227f603414ba21265de1c3187941dab71cec5c5))
+* add separate service account for controller and cronjob ([4906a44](https://github.com/aljoshare/runo-helm-chart/commit/4906a443a5eb99535600a6a607f6140992671768))
+* add support for setting the requeue duration of runo ([536fa5d](https://github.com/aljoshare/runo-helm-chart/commit/536fa5d48e1182f7bcc465329f7b47a6d4684626))
+* bump appVersion to 0.1.3 ([c2a320e](https://github.com/aljoshare/runo-helm-chart/commit/c2a320e1f224c4541ff952b18993f87cd9ca0d17))
+* bump appVersion to 0.1.4 ([7425de4](https://github.com/aljoshare/runo-helm-chart/commit/7425de4c3caaf39d55d1507817328d33e8f0013c))
+* bump appVersion to 0.1.4 ([73dfdbf](https://github.com/aljoshare/runo-helm-chart/commit/73dfdbf5845e8d631d2210b15e4aebb34d2e3f36))
+* bump runo to 0.1.5 ([26eab4f](https://github.com/aljoshare/runo-helm-chart/commit/26eab4f84fd61860887865d30877384ae02e06e7))
+* bump runo to 0.2.0 ([5149ac9](https://github.com/aljoshare/runo-helm-chart/commit/5149ac9fb21cd62ea124f3cf9ab51f4dfdfb7e27))
+* bump runo to 0.2.1 ([f40b440](https://github.com/aljoshare/runo-helm-chart/commit/f40b4401310e0759adf90f45e3a0220572fc6de8))
+* bump runo to 0.2.10 ([9389a7d](https://github.com/aljoshare/runo-helm-chart/commit/9389a7d6f613d722b403a98d745f9c68432d760a))
+* bump runo to 0.2.11 ([846204d](https://github.com/aljoshare/runo-helm-chart/commit/846204dd9ede1938c5aab0b4302c828be2e362df))
+* bump runo to 0.2.12 ([2075cc0](https://github.com/aljoshare/runo-helm-chart/commit/2075cc0642680b8f9a9b86f8a30403293d48144e))
+* bump runo to 0.2.12 ([40e95c3](https://github.com/aljoshare/runo-helm-chart/commit/40e95c3574c13015c53f4472e5908d18e6f37059))
+* bump runo to 0.2.13 ([474d8dd](https://github.com/aljoshare/runo-helm-chart/commit/474d8dd927f38f668590695d1aaa424e0954b3de))
+* bump runo to 0.2.14 ([9eac1a8](https://github.com/aljoshare/runo-helm-chart/commit/9eac1a8a38142118eba9b4a4fd3c1315f53062f5))
+* bump runo to 0.2.15 ([1b03872](https://github.com/aljoshare/runo-helm-chart/commit/1b03872b746dc6fd75e70e6c300256be5229e403))
+* bump runo to 0.2.16 ([633bc98](https://github.com/aljoshare/runo-helm-chart/commit/633bc98a1f0cd3c999f612a6c1896b09a4547863))
+* bump runo to 0.2.17 ([aaca7ac](https://github.com/aljoshare/runo-helm-chart/commit/aaca7acd92204a51e451513f5cef37b37b6374e8))
+* bump runo to 0.2.18 ([465c425](https://github.com/aljoshare/runo-helm-chart/commit/465c4250dde1e54ede59bb1bcecfb13761e18758))
+* bump runo to 0.2.19 ([03ebafa](https://github.com/aljoshare/runo-helm-chart/commit/03ebafab5fc8341eb8e3810d76aeff98407b48c9))
+* bump runo to 0.2.2 ([5d2d9b5](https://github.com/aljoshare/runo-helm-chart/commit/5d2d9b5e1f233341154876f9bbec35f556129f65))
+* bump runo to 0.2.24 ([cf8765a](https://github.com/aljoshare/runo-helm-chart/commit/cf8765aac67d9af6007ffb76f00ed513af61701b))
+* bump runo to 0.2.24 ([13e6487](https://github.com/aljoshare/runo-helm-chart/commit/13e64870a3a65401cdfea4f827040c908fee71a5))
+* bump runo to 0.2.25 ([4761496](https://github.com/aljoshare/runo-helm-chart/commit/476149693545a404a84866d5a566ca7bef274dda))
+* bump runo to 0.2.25 ([038acfe](https://github.com/aljoshare/runo-helm-chart/commit/038acfe63a6de7e065e37abfc3dd43762a8e66ed))
+* bump runo to 0.2.26 ([814b943](https://github.com/aljoshare/runo-helm-chart/commit/814b94330d4b1f690f4f7d72d0ea7519074f9519))
+* bump runo to 0.2.26 ([621f1d2](https://github.com/aljoshare/runo-helm-chart/commit/621f1d26de7797e7591df633055aea9e54a6e662))
+* bump runo to 0.2.27 ([#74](https://github.com/aljoshare/runo-helm-chart/issues/74)) ([7268a02](https://github.com/aljoshare/runo-helm-chart/commit/7268a022658d7f4df115fc9b293da42e38f2334f))
+* bump runo to 0.2.28 ([#76](https://github.com/aljoshare/runo-helm-chart/issues/76)) ([5da8003](https://github.com/aljoshare/runo-helm-chart/commit/5da8003b27cb0845afdc26026d6a59833fe11b22))
+* bump runo to 0.2.3 ([96bf664](https://github.com/aljoshare/runo-helm-chart/commit/96bf66440a2d7bb5e1d3fbc04b58028f1b6376a0))
+* bump runo to 0.2.4 ([0e547ce](https://github.com/aljoshare/runo-helm-chart/commit/0e547ce7d129915de8e0d84a28c4df6d0c7862ee))
+* bump runo to 0.2.6 ([c42f5d5](https://github.com/aljoshare/runo-helm-chart/commit/c42f5d5cc7f733c47b5fb768ce8d77e3e16dd11a))
+* bump runo to 0.2.7 ([b948720](https://github.com/aljoshare/runo-helm-chart/commit/b94872044e5fc32507221a21b5cfa3f857dccb0f))
+* bump runo to 0.2.8 ([a04f70c](https://github.com/aljoshare/runo-helm-chart/commit/a04f70caeca31bf745327c5ff53c946b0d581046))
+* bump runo to 0.2.9 ([9e7a3aa](https://github.com/aljoshare/runo-helm-chart/commit/9e7a3aad739f56be6940cb2a23f0716b7ec5ac08))
+* bump runo to 0.3.0 ([#83](https://github.com/aljoshare/runo-helm-chart/issues/83)) ([6c0a6ce](https://github.com/aljoshare/runo-helm-chart/commit/6c0a6ce0eeddf6e325cf39559e5c46474c78e636))
+* bump runo to 0.4.0 ([#85](https://github.com/aljoshare/runo-helm-chart/issues/85)) ([84501af](https://github.com/aljoshare/runo-helm-chart/commit/84501af6876bf91fd0971dfd765077e0ce21b673))
+* bump runo to 0.5.0 ([#87](https://github.com/aljoshare/runo-helm-chart/issues/87)) ([b956ec6](https://github.com/aljoshare/runo-helm-chart/commit/b956ec6ceb7b557a9e858e64c2408802ffaa8cd0))
+* bump runo to 0.6.0 ([#88](https://github.com/aljoshare/runo-helm-chart/issues/88)) ([a39e3b9](https://github.com/aljoshare/runo-helm-chart/commit/a39e3b9e81d7c46b4f282025ea8237190526ba57))
+* bump runo to 0.6.1 ([#90](https://github.com/aljoshare/runo-helm-chart/issues/90)) ([34c0292](https://github.com/aljoshare/runo-helm-chart/commit/34c02928ebcfe1f5f07b9c581d8efa61f3fa9ec2))
+* support args for runo ([f456c20](https://github.com/aljoshare/runo-helm-chart/commit/f456c20fb1dcb39f6185249615fd42fdabc109b6))
+* use separate controller service account ([92eebe7](https://github.com/aljoshare/runo-helm-chart/commit/92eebe723582fbcc800b659c16482e114025060f))
+
+
+### Bug Fixes
+
+* allow creation, deletion and updating cronjob ([99676f8](https://github.com/aljoshare/runo-helm-chart/commit/99676f86c0611b0a0674a9007a5d5494e00feccd))
+* migrate to new repository name ([fd4d2df](https://github.com/aljoshare/runo-helm-chart/commit/fd4d2df40c7c93f0bb4a3add5d43b83f323584a8))
+* remove autoscaling configuration ([bb32132](https://github.com/aljoshare/runo-helm-chart/commit/bb32132f7ebc7745940c4f7e8ec23a70eeedaf50))
+* set rollingUpdate spec to null ([3dff037](https://github.com/aljoshare/runo-helm-chart/commit/3dff03727858debb85acb28a3ea6f24dbcc8dc18))
+* use /health for probes ([8dcc83e](https://github.com/aljoshare/runo-helm-chart/commit/8dcc83e6d6cdbc63cd014a315c4c94f48e18c085))
+* use recreate as rollout strategy ([68911e8](https://github.com/aljoshare/runo-helm-chart/commit/68911e836327c9464a936ad774d90407366e4c75))
+
 ## [0.8.0](https://github.com/aljoshare/runo-helm-chart/compare/runo-v0.7.0...runo-v0.8.0) (2026-09-14)
 
 
